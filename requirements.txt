@@ -1,0 +1,9 @@
+numpy
+scipy
+matplotlib
+h5py
+pandas
+seaborn
+jupyter
+notebook
+tensorflow>=2.0.1
