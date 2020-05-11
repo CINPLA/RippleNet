@@ -1,0 +1,16 @@
+name: ripplenet
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3
+  - numpy
+  - scipy
+  - ipympl
+  - matplotlib
+  - h5py
+  - pandas
+  - seaborn
+  - notebook
+  - jupyter
+  - tensorflow>=2.0
