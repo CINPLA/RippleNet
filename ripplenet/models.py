@@ -1,6 +1,11 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# import tensorflow as tf
+'''Defines functions returning tensorflow.keras model instances.
+
+Author: Espen Hagen (<https://github.com/espenhgn>)
+
+LICENSE: <https://github.com/espenhgn/RippleNet/blob/master/LICENSE>
+'''
 from tensorflow import keras
 from tensorflow.keras.initializers import GlorotUniform, Orthogonal
 

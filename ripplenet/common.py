@@ -1,6 +1,11 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-'''Some functions and definitions used by different jupyter notebooks'''
+'''Some functions and definitions used by different jupyter notebooks
+
+Author: Espen Hagen (<https://github.com/espenhgn>)
+
+LICENSE: <https://github.com/espenhgn/RippleNet/blob/master/LICENSE>
+'''
 # import os
 import numpy as np
 import scipy.signal as ss
