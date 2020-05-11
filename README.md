@@ -10,6 +10,8 @@ Author: Espen Hagen (https://github.com/espenhgn)
 
 LICENSE: https://github.com/espenhgn/RippleNet/blob/master/LICENSE
 
+[![DOI](https://zenodo.org/badge/257224892.svg)](https://zenodo.org/badge/latestdoi/257224892)
+
 ## Clone
 
 These codes can be downloaded using git (www.git-scm.com):
