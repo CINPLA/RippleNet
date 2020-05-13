@@ -76,8 +76,7 @@ This will not install `tensorflow-gpu` for hardware acceleration by default.
 
 ## Binder
 
-You may mess around with the RippleNet notebooks on MyBinder.org:
-https://mybinder.org/v2/gh/espenhgn/RippleNet/master
+You may mess around with the RippleNet notebooks on MyBinder.org: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/espenhgn/RippleNet/master)
 
 Retraining networks is not recommended (no GPU access)!
 
