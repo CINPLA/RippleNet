@@ -12,6 +12,30 @@ LICENSE: https://github.com/espenhgn/RippleNet/blob/master/LICENSE
 
 [![DOI](https://zenodo.org/badge/257224892.svg)](https://zenodo.org/badge/latestdoi/257224892)
 
+## Citation
+
+RippleNet and its application is described in a preprint, which can be cited as:
+
+**RippleNet: A Recurrent Neural Network for Sharp Wave Ripple (SPW-R) Detection**  
+Espen Hagen, Anna R. Chambers, Gaute T. Einevoll, Klas H. Pettersen, Rune Enger, Alexander J. Stasik  
+*bioRxiv* 2020.05.11.087874; doi: https://doi.org/10.1101/2020.05.11.087874
+
+BibTex format:
+```
+@article {Hagen2020.05.11.087874,
+	author = {Hagen, Espen and Chambers, Anna R. and Einevoll, Gaute T. and Pettersen, Klas H. and Enger, Rune and Stasik, Alexander J.},
+	title = {RippleNet: A Recurrent Neural Network for Sharp Wave Ripple (SPW-R) Detection},
+	elocation-id = {2020.05.11.087874},
+	year = {2020},
+	doi = {10.1101/2020.05.11.087874},
+	publisher = {Cold Spring Harbor Laboratory},
+	abstract = {Hippocampal sharp wave ripples (SPW-R) have been identified as key bio-markers of important brain functions such as memory consolidation and decision making. SPW-R detection typically relies on hand-crafted feature extraction, and laborious manual curation is often required. In this multidisciplinary study, we propose a novel, self-improving artificial intelligence (AI) method in the form of deep Recurrent Neural Networks (RNN) with Long Short-Term memory (LSTM) layers that can learn features of SPW-R events from raw, labeled input data. The algorithm is trained using supervised learning on hand-curated data sets with SPW-R events. The input to the algorithm is the local field potential (LFP), the low- frequency part of extracellularly recorded electric potentials from the CA1 region of the hippocampus. The output prediction can be interpreted as the time-varying probability of SPW-R events for the duration of the input. A simple thresholding applied to the output probabilities is found to identify times of events with high precision. The reference implementation of the algorithm, named {\textquoteright}RippleNet{\textquoteright}, is open source, freely available, and implemented using a common open-source framework for neural networks (tensorflow.keras) and can be easily incorporated into existing data analysis workflows for processing experimental data.Competing Interest StatementThe authors have declared no competing interest.},
+	URL = {https://www.biorxiv.org/content/early/2020/05/12/2020.05.11.087874},
+	eprint = {https://www.biorxiv.org/content/early/2020/05/12/2020.05.11.087874.full.pdf},
+	journal = {bioRxiv}
+}
+```
+
 ## Clone
 
 These codes can be downloaded using git (www.git-scm.com):
