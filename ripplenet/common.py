@@ -103,7 +103,7 @@ def get_metrics(X, Y, Y_pred, labels, all_labels,
     for i in range(X.shape[0]):
         # find times of local peaks above threshold
         y = Y_pred[i, :, 0]
-        peaks, props = ss.find_peaks(y, height=threshold, distance=distance,
+        peaks, _ = ss.find_peaks(y, height=threshold, distance=distance,
                                      width=width)
 
         def get_j():
@@ -188,7 +188,7 @@ def get_TPs_FPs_FNs(X, Y, Y_pred, X1, S, labels, all_labels,
     for i in range(X.shape[0]):
         # find times of local peaks above threshold
         y = Y_pred[i, :, 0]
-        peaks, props = ss.find_peaks(y, height=threshold, distance=distance,
+        peaks, _ = ss.find_peaks(y, height=threshold, distance=distance,
                                      width=width)
 
         def get_j():
@@ -232,6 +232,7 @@ def get_TPs_FPs_FNs(X, Y, Y_pred, X1, S, labels, all_labels,
 
 def get_TPs_FPs_FNs_stats(Y, Y_pred, rippleLocs,
                           threshold, distance, width,
+                          run_speed,
                           y_label_width=62, decimals=3):
     '''
     Parameters
@@ -244,6 +245,7 @@ def get_TPs_FPs_FNs_stats(Y, Y_pred, rippleLocs,
     threshold: float
     distance: int
     width: int
+    run_speed: ndarray or None
     Fs: float
     decimals: int
 
@@ -261,8 +263,13 @@ def get_TPs_FPs_FNs_stats(Y, Y_pred, rippleLocs,
     FNs = []
     # Determine time(s) and probability(ies) in sample as the time and
     # magnitude of local maxima following a threshold crossing from below
-    peaks, props = ss.find_peaks(Y_pred, height=threshold, distance=distance,
+    peaks, _ = ss.find_peaks(Y_pred, height=threshold, distance=distance,
                                  width=width)
+
+    if run_speed is not None:
+            # keep ripples where run_speed == 0:
+            peaks = peaks[run_speed[peaks] == 0]
+
 
     # one-hot encoding of found peaks
     hat_y = np.zeros(Y.shape[0])
