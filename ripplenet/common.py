@@ -264,12 +264,11 @@ def get_TPs_FPs_FNs_stats(Y, Y_pred, rippleLocs,
     # Determine time(s) and probability(ies) in sample as the time and
     # magnitude of local maxima following a threshold crossing from below
     peaks, _ = ss.find_peaks(Y_pred, height=threshold, distance=distance,
-                                 width=width)
+                             width=width)
 
     if run_speed is not None:
-            # keep ripples where run_speed == 0:
-            peaks = peaks[run_speed[peaks] == 0]
-
+        # keep ripples where run_speed == 0:
+        peaks = peaks[run_speed[peaks] == 0]
 
     # one-hot encoding of found peaks
     hat_y = np.zeros(Y.shape[0])
