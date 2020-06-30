@@ -8,7 +8,7 @@ in hippocampus CA1.
 
 Author: Espen Hagen (https://github.com/espenhgn)
 
-LICENSE: https://github.com/espenhgn/RippleNet/blob/master/LICENSE
+LICENSE: https://github.com/CINPLA/RippleNet/blob/master/LICENSE
 
 [![DOI](https://zenodo.org/badge/257224892.svg)](https://zenodo.org/badge/latestdoi/257224892)
 
@@ -41,7 +41,7 @@ BibTex format:
 These codes can be downloaded using git (www.git-scm.com):
 
     cd <Repositories> # whatever download destination
-    git clone https://github.com/espenhgn/RippleNet
+    git clone https://github.com/CINPLA/RippleNet
     cd RippleNet
 
 Some binary files like `.h5` and `.pkl` may be tracked using Git LFS (https://git-lfs.github.com)
