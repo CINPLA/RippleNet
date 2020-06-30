@@ -4,21 +4,11 @@
 
 Author: Espen Hagen (<https://github.com/espenhgn>)
 
-LICENSE: <https://github.com/espenhgn/RippleNet/blob/master/LICENSE>
+LICENSE: <https://github.com/CINPLA/RippleNet/blob/master/LICENSE>
 '''
-# import os
 import numpy as np
 import scipy.signal as ss
-# import matplotlib.pyplot as plt
-# from matplotlib.gridspec import GridSpec
-# import tensorflow
-# from tensorflow import keras
-# from tcn import TCN
-# import h5py
-# from glob import glob
 import pandas as pd
-# import pickle
-# from matplotlib import colors
 
 
 rcParams = {
