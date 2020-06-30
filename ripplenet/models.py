@@ -4,7 +4,7 @@
 
 Author: Espen Hagen (<https://github.com/espenhgn>)
 
-LICENSE: <https://github.com/espenhgn/RippleNet/blob/master/LICENSE>
+LICENSE: <https://github.com/CINPLA/RippleNet/blob/master/LICENSE>
 '''
 from tensorflow import keras
 from tensorflow.keras.initializers import GlorotUniform, Orthogonal
