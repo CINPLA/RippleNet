@@ -36,7 +36,7 @@ rcParams = {
 
 
 def annotate_subplot(ax, ncols=1, nrows=1, letter='A',
-                     linear_offset=0.025, fontsize=16,
+                     linear_offset=0.025, fontsize=20,
                      fontweight='demibold'):
     '''add a subplot annotation'''
     ax.text(-ncols*linear_offset, 1+nrows*linear_offset, letter,
