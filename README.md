@@ -2,7 +2,7 @@
 
 ## Description
 
-This repository contains files for RippleNet, a recurrent neural network with LSTM
+This repository contains files for RippleNet, a recurrent neural network with Long Short-Term Memory (LSTM)
 layers for detecting sharp-wave ripples in single-channel LFP signals measured
 in hippocampus CA1.
 
@@ -14,7 +14,26 @@ LICENSE: https://github.com/CINPLA/RippleNet/blob/master/LICENSE
 
 ## Citation
 
-RippleNet and its application is described in a preprint, which can be cited as:
+RippleNet and its application is now described in a peer-reviewed publication, which can be cited as:
+
+**RippleNet: A Recurrent Neural Network for Sharp Wave Ripple (SPW-R) Detection**
+Hagen, E., Chambers, A.R., Einevoll, G.T. et al. RippleNet: a Recurrent Neural Network for Sharp Wave Ripple (SPW-R) Detection. *Neuroinform* (2021). https://doi.org/10.1007/s12021-020-09496-2
+
+BitTex format:
+```
+@Article{Hagen_2021,
+  author    = {Espen Hagen and Anna R. Chambers and Gaute T. Einevoll and Klas H. Pettersen and Rune Enger and Alexander J. Stasik},
+  journal   = {Neuroinformatics},
+  title     = {{RippleNet}: a Recurrent Neural Network for Sharp Wave Ripple ({SPW}-R) Detection},
+  year      = {2021},
+  month     = {jan},
+  doi       = {10.1007/s12021-020-09496-2},
+  publisher = {Springer Science and Business Media {LLC}},
+}
+```
+
+
+The older preprint can be cited as:
 
 **RippleNet: A Recurrent Neural Network for Sharp Wave Ripple (SPW-R) Detection**  
 Espen Hagen, Anna R. Chambers, Gaute T. Einevoll, Klas H. Pettersen, Rune Enger, Alexander J. Stasik  
