@@ -3,14 +3,15 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  - python=3
-  - numpy
+  - python=3.8
   - scipy
   - ipympl
   - matplotlib
-  - h5py
   - pandas
   - seaborn
-  - notebook
   - jupyter
-  - tensorflow>=2.0
+  - pip
+  - pip:
+    - tensorflow
+    # - h5py
+    # - numpy
